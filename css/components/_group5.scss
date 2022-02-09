@@ -1,0 +1,24 @@
+.group5 {
+    padding-bottom: 220px;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 160px;
+    }
+    background: {
+        image: url("../img/group5-bg.png");
+        repeat: no-repeat;
+        size: 100% 120%;
+        position: left top -258px;        
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        padding-top: 156px;
+        @media (max-width: 1200px) {
+            padding-top: 0;
+        }
+    }
+}

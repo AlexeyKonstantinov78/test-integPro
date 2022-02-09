@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/grand-hotel-400.woff2" as="font" type="font/woff2" crossorigin>
+
+    <title>template</title>    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const createLink = url => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = url;
+                document.head.append(link);
+            };
+            createLink('css/index.css');
+        });
+    </script>
+        
+</head>
+<body class="page">
+    <section class="group1">
+        <div class="container group1__container" >
+            <header class="header">                
+                    <img class="logo__img" src="./img/logo.png" width="185" height="42" alt="your logo">
+                    <div class="menu-burger">
+                        <button class="menu-burger__btn">
+                            <svg class="menu-burger__svg" width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="3" rx="1" />
+                                <rect y="9" width="40" height="3" rx="1" />
+                                <rect y="18" width="29" height="3" rx="1" />
+                            </svg>
+                        </button>                
+                        <nav class="navigation menu-burger__nav">
+                            <ul class="navigation__items menu-burger__items">
+                                <li class="navigation__item menu-burger__item"><a href="#" class="navigation__link menu-burger__link">Home</a></li>
+                                <li class="navigation__item menu-burger__item"><a href="#" class="navigation__link menu-burger__link">Product</a></li>
+                                <li class="navigation__item menu-burger__item"><a href="#" class="navigation__link menu-burger__link">Promo</a></li>
+                                <li class="navigation__item menu-burger__item"><a href="#" class="navigation__link menu-burger__link">About</a></li>
+                                <li class="navigation__item menu-burger__item"><a href="#" class="navigation__link menu-burger__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <form class="search">
+                            <input class="search__input" type="text" name="search" >
+                            <button class="search__btn"></button>
+                        </form>     
+                    </div>      
+            </header>
+            <h1 class="pressent__title">Title Here</h1>
+            <p class="pressent__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>                
+            <button class="pressent__btn btn">Order Now</button>
+            
+        </div>        
+    </section>
+    
+    <main class="main" >
+        <section class="group2">
+            <div class="container group2__container">
+                <h2 class="group2__name">Best Seller</h2>
+                <p class="group2__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <ul class="group2__items">
+                    <li class="group2__item">
+                        <img class="group2__img" src="./img/group2-li1.png" width="245" height="245" alt="imeg">
+                        <h3 class="group2__name-h3">Title Here</h3>
+                        <p class="group2__add subscription-add">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li class="group2__item">
+                        <img class="group2__img" src="./img/group2-li2.png" width="245" height="245" alt="imeg">
+                        <h3 class="group2__name-h3">Title Here</h3>
+                        <p class="group2__add subscription-add">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li class="group2__item">
+                        <img class="group2__img" src="./img/group2-li3.png" width="245" height="245" alt="imeg">
+                        <h3 class="group2__name-h3">Title Here</h3>
+                        <p class="group2__add subscription-add">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="group4">
+            <div class="container group4__container">
+                <picture class="group4__picture">
+                    <img class="group4__img" src="./img/group4-img.png" width="475" height="482" alt="image">
+                </picture>                
+                <div class="group4__content">
+                    <h2 class="group4__name">Oriental Taste</h2>
+                    <p class="group4__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <button class="group4__btn btn">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="group3" >
+            <div class="container group3__container">
+                <h2 class="group3__name">Statistics</h2>
+                <p class="group3__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <ul class="group3__items">
+                    <li class="group3__item">
+                        <p class="group3__count">123</p>
+                        <p class="group3__subscriptions">Outlets</p>
+                    </li>
+                    <li class="group3__item">
+                        <p class="group3__count">100</p>
+                        <p class="group3__subscriptions">Chef</p>
+                    </li>
+                    <li class="group3__item">
+                        <p class="group3__count">300</p>
+                        <p class="group3__subscriptions">MENU</p>
+                    </li>
+                    <li class="group3__item">
+                        <p class="group3__count">30</p>
+                        <p class="group3__subscriptions">COUNTRY</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="group5" >
+            <div class="container group5__container">
+                <div class="group4__content group5__content">
+                    <h2 class="group4__name">Chicken Grill</h2>
+                    <p class="group4__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <button class="group4__btn btn">Order Now</button>
+                </div>
+                <picture class="group4__picture">
+                    <img class="group4__img" src="./img/group5-img.png" width="475" height="482" alt="image">
+                </picture>                
+                
+            </div>
+        </section>
+
+        <article class="group7" >
+            <div class="container group7__container">                
+                <blockquote class="group7__blockquote">
+                    <p class="group7__blockquote-text subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <cite class="group7__city">Lenora Fields</cite>
+                </blockquote>
+            </div>
+        </article>
+
+        <section class="group6" >
+            <div class="container group6__container">
+                <h2 class="group6__name">Subscribe</h2>
+                <p class="group6__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <form class="group6__form">
+                    <input class="group6__input" type="email" name="email" id="email" placeholder="Your Email">
+                    <button class="group6__btn btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" >
+        <div class="container footer__container">
+            <div class="footer__pressent">
+                <h2 class="footer__title">Title Here</h2>
+                <p class="footer__subscription subscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </p>
+                <ul class="footer__social-items">
+                    <li class="footer__social-item"><a class="footer__social-link instagram" href="#" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+                            <image id="Instagram" width="42" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAEiklEQVRYhcWZS2xVVRSGv7YIRS0gRnwRDb4w2Eaj1AdWScAmBA0TZSJDHDnQESYOnIgSIzqQOBNCNLGJMR2QmJgaq7EqiEoKKkoRqVQEEWnwUV5Wlln6X7I5PWfvcy+39E9uunv22mv/Z9312vs2mBk1YgpwP3AncAtwA3AlMF3qfgcOAnuAncDnQB9wspbtaiF6F7ACeETEqoETfxvoArZWtdKJlvzMN7Nuqx+6pbPU/mVJrq0jwSzW1oPodWa2fRxJVrBdexVyifnoPUAvMLVaJ64Rx4HFwJa85UVEPWA+O08Es7g7L9DyiM4GBoFJE8ESGAXmAPvDh405gn0TSBLt3Zf3MMQ6vU0KXwKf6K09sZ+SJfL8yPeYrELg39YCuVYMc8TliTMyQWS1lojObWb2QBW5t+iz0Mw2l9ivNS/qNyvSi+AWvC+Yc6e/CZihcuqWa8isNVnaLX4U+F77VPAe0BnZc4u+gTMWbU+82TEza5Zsm5ltLZ8ix+DnoCK5oY4m5NvDhN+VEH5WcrPM7HiNBH8ysw0anzazq6VzVWJdV4Voi5mdSgi3SenLNZJ0zJaOK/T/m0H1i8G5tUxSNbgg4ifelu3W+N6I3KfAJmUE983bgWXAQs036W8lJVbiYa8yx/QcnYjb4jINx4EgcncVyDwaifCHzewfMxs2s9fMbJ/WDAYyexIcXnKLtkas5DgRjCfnzC8CPtTYI3gp/0d/D/Au0K1vwiP4sWBdczBONdOt6M1i2B28+VBGbl0w91aOjk3B/JrM3OFgbkeCw7cuNJIQGggU7g+e/21mM/X86cj65yQzVWmugt8Cvf0JDofcsU8nzF6Er4BhJfqnInKr1Cp6G7cteJ4tDjFcmNeUZFHUsP6qvxerOhXB/XqWxoerIBeiobGggzpLqOB55WD3B3Akst4t+YvGl9dI9FhjYpMYWrWxu87qiNzziuoW4I7gefhNpdxg2InuSgiFSkJ/bhIJxyvAhpy1XYHMajUvtRAdcqLfJITCnnU0M7cSeFBjz5ELRGyNLidWaM5z7ZOZtaGuVKO+01PD8kRqOFiiMj0eqUwrC9b8GMj8kOCw3NusGUozReY/qag+kehZ+4F3MrX+IWB+gfwO4DaNvdZPK5Bzd7u08kapG5BbJfdCQq4avCqdNybWdIf9aEdC+EXJXWJmR+pAckTtnut8JiHbkb0piZUxL5fTJHe9mX1wDiQ/NrN50jUlUcL7885M7ktfRCLPy19H0E21AXPVRzZHIndUa7wwDKj0okLzkXQWoV0+P+buaWPCGt5JLavDKXSpmX2d2Gtj7O7J3/JAiVL3nU6lQ8CfygyVvFhRWMkiTbK49wTX6FSZ6oEPAVeFBSbvSmduiWo13rhZbnKWBbMYSJy1xxudWZJFRB3vA0smgOQS7T0GsRavR5Vj8DwQ3Ku9egolSkSo35CsryFflsV65dMoj2pSyiIz660jwV7pLLV/LTmw08zeKHEozMNfZva6dFS177n8IHaZek6/6/QfxK79r8uBizQ/otPDPv0g5tfdfkFb/bkJ+BdbHWD7FgueYAAAAABJRU5ErkJggg=="/>
+                        </svg></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link facebook" href="#" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+                            <image id="Facebook" width="42" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAADE0lEQVRYhdWZz0sVURTHP05KGUm/hMKirAyCtDAqJSwLA6G2raI2LVrUJugfCNpLkasWEUVIELgUKrCyUmxRSUYQQWlkv4iQfhp14sh5ME73vTdzZ9TXBwZ5d7znfufOOffce6ZMRPCkAtgFbAfqgXVADbDIzI0DY8AL4AkwCNwBfvgM5yN0C3AYOACsTNj3LXANuAIMJOqpQmNem0WkS7KjW0Sa4o4fV+TpDAVG6chCaI2I9E+jyBxDIlJXSEshH90E3A4Fx3TzE2gD7rnGySd0I/DQInum2QH0xxG6GHgFVM2CSOU3sBYYCTe6hD621+6DrpFngVvAKPA9YuMqsDWG3ZfAmiktEac9lSIgXotIbZHgvJnAXme+qK9NIVJpjLHM9CW02ZDrG4Qmt9PzdWMpUoOvGFFXKMb53P1y+7sB2J9SqIvlZrtMvcx+J6HZ9hKDOaHHU4hUfjnaVFwfUJfS9gngYGCzeiilsTmOtgqPTYsL3fxUqdCWDLJPtaNNZ3ReBkL1gdt0Nnd6GtDAeA6TAekKpD+2nlabf4ot5As8xmopt3TpwzCwrUA/9ds9kbYHMRf8KPVBBs6eBJeLxGFVYMcHH4KEfXTvsMxzrKVBis1H0rOPBlel51jzy82AD+stm5WZ712M2FDbHcBCCyzfNzf5kLp7GvPIGFH67EQaZq7vidPBB331bzIwNOpo0+XoXQa2lU+BnbtLnREV+vQ/EDqsQu+WgJBi3A+szPKlhEWqr99QoRNAVwkIykc38DmXXdLs7qebM4TS4BDQW4IiH9kaPSVfH5s9PXk5mrsRFvrMUl6pcMlS8z9ClZOeCeCro23Cqh4+vAeOhPuVO4y0WqXCdS8fK4CGyAanwvK9D63Rh8xXJGt2FapmiHbgenSofJvfATtLuY7B08k+l8hCQrHUWj9DewF1tUagJ+9/xKgXBSJyLmVdqhAXRKQyqxq+Xi0i0pOhwF4R2Zv1x4bwtdtmYdxD3FcRuSwi7UnHTfNBbIktI03my6v1tBgqMHwDPlrlWGsA+kFMvwnoGpkM4C/vEycH511VwAAAAABJRU5ErkJggg=="/>
+                        </svg></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link twitter" href="#" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+                            <image id="Twitter" width="42" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAADqklEQVRYhc2Zy29VVRTGf70UklKbIBSUSpTUYghWCiaUiK1VK+GRmDAhTkhw6uM/YCJxRgITkQEDEh7CABFnjQxqiw8IGBqVqgm+eJMW0bQpCGg/smRdczzcx97n3rZ+ycm9uWftvb6zz95rfWvdGklkxHTgBaAdaAWeBJqAWT7dCHAV+Ak4C5wCjgN/ZnGXheizwCZgI7Agcuw14EPgA+Bk1EgjGni1STqk6uGopJWh/kNJvltFgmnsqAbRJkknJpBkHt9IainFpdQeXQr0Jw7HROM20A18UchPMaJPAwN+sicbq4ATIUQfBs4DDVNA0vA30AxcSP6YK2DYN4UkDdN8y/0HaaLv+N6caiwEdiY5JF+93fzlf0AyCVu0b0mt6M6ywyYfu/Me8yu6GPh+Amn0+0m+47pgQ2qRTBM8UuTMrPxHJ3hAfS8iOH8aYXtb0voCAbzFE8mApJcl7Soxx8F8ZqqV9Hug4yF39Fag/fMB6bFL0s+ShovMcUdSgy11R0T2+do/3wfeLmN7pFiWSaAemAlsAf4qYmNJp9uIdgaSNMxOfDeyzwCfFLHdFzDfGHAG2Ao8WsKuI+fpMhSmRecmbE0QrwVeAg4Aw4l79QFzPgRcBBaVsWutBVoiiBp6/STeTPzW51edx76nEtukFOoC9cTjFp6uAPMDSRqZc/66P/a8XAmavVQph6HayLze6K/ZViJzsZVAc6DdTNujNRETW7BeB9wCxiuieB8rAu1qjOho5OR7XRdUA68FznHTiF6JdGin/jPgDWBOBWSXAW2BtjdygZs5jV+9AqgE2yLGXjCi32VwtthP/28ZiVrsXR1hP2hEP8/gqNFLhVczjLVS53DkmC9NFMyQNBooMgrBxMTrgf2B6ZIGI+cflzQr5xrxUIaVMVwC9geIDzyXnwaWRPo4CvyRf9KlAU92V9JHkjZLWidpWUQ7aHOElEyjM90p6Q14BdbReFNSfQC5OkmbJB3PSFAurB/olMSWIyY6vvLTP+x60tTQY67IngPmRb7mNNp9uzzQe9pewdNXG3vL9Z5+9KbsVGLIm8L/qrNCVV9XibJgstCVlpCFiF6OLE+qjTXAD+k5CxHF29ZG9u4kk1wPHCt0oxhRPLW2TnBjIg8TOcuBnqIWAfEwF9mgiMUej7lV6eHb1SGpp4oErePySqj/GKL560VfhZEM5MYk7Ze0JtZvJX+IWTPCwoiVzraXn3DFb9nJYOX0dZeDg/6HmDXLLEbGAbgH74ilTX5cDdUAAAAASUVORK5CYII="/>
+                        </svg></a></li>
+                    <li class="footer__social-item"><a class="footer__social-link whatsapp" href="#" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+                            <image id="WhatsApp" width="42" height="42" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAEWklEQVRYhb2ZbYgWVRTHf/uslktZliVkodFWbGS+RGiGtYbVgoFsL1IQQV/DvhUFQZFFLx/SoAypaDMio7CyLTBFCl/XShRNSSLJfGnNImvTxVr1H8fOxHWY55l7n335wzAzd8459z937jn33DMNkqgTw4GbgKnABKAZGAuMcnM9QDewG9gBfA2sBY7V0109RK8F7gfuBi5J1D0ILAPeBTYlaRrRyGOSpPc0cPhY0rTY/mNJPjOABPNYOBBEx0rqGkSSGbZLurwWl1pzdCKwJnCOwcbfwCxgQ1E/1YheDWx1zx5q3AB0xRA9D/gJGFknQQs/fcBZQKUO/RPAZcDesLHI0JpEkn8Ci4E7PFw1AecAI3z6zAM+T7DX6PH2dOQm7VOJTvCEpErOxghJowscwsLbJwm2F1Xz+ksTjHwrqSXQfUBSp6R9gUyvpB2SFkuaHsg+mNDPNUVEP4tU3iypwXVul/R9pN77kka63q2ROl15oi2Rir/4pzWdxyJ1QnRLusr150bqTA2JvpKiJGleHSQzHJF0odt5K0J+aUZ0mKTDEQofufHmXLtNhUckbUsg+1XgeCdLZP+xKWPCMyONZ59sddB2IPD6KQlEDXNc740I2XaLozdGxLZ9wHfAxb7MZVgCnPRrW8nWJ8TLx/28KEJ2RsWXyzKs9Of35eT+yN1vTCA6DTgT2Ab0lshOqHhmXoYt/nxSTq4tuJ4DPJxA1DDdz7tL5MZV/HOWIRu50Tm5WT4yGRoTiY7z8+ESuQsqket6RuB4wbNlfu6sY0Qze2Uv2GREGyIMZqP+c8EzS0SW+/VC4KEckbuAF6u85HY/X1TSf4OFh4MR4eFTDyX31pB5NViOr5T0mqTZQdt4SV8G8ke8fXhELD1kglsiiB51o42S+mrIfShpTI0txZJAdqm3tUf0v8sEP4gQNNzphp8tkftL0pOSrsiRtK9xPJBr9vaNEX2vSslB9/tnMp29kTpG4k1JG3LtLwQ5agxeSkm5ej0vsOP3SJ0idAajHJsizjXhM/xzlWGBG3+0HyQ7ApIdkTrmaKMypdcjFCb7aP4oaY+k5yS1SprvzlYLOz3/zPp7OZKk3EH/34VO9DW3Gn4FxgDDgMnA5pycbavvAa4HxvvGzlabXcDqYLNmRbSO3NJbBivErQu98osabzU/58HmsU9LWu77pbKKi4Ws5yUdSxhJw9aiSkmLp3J5HPUKnu3324Hb/D5E96m3/m+l2e9Vj3M94bkOuDlhBENYSfObU/e5N19Q8FY9vuscarxdVnv6ITL1G0wc8vl8IuujqFLSWiWBGEq0hiSrET0QuT0ZLLR5tDgN1YpYm5xs3xCTnA2sKnpQq9q23n8iFEWCgcYeYAqwoqrdiBhYSShQ1ANbSpv6WxoPjxmSVgwgQUuib4ntP4Vodsz0Ueipg5zlBO9Iakvttz8/xM73MGK7UJvLtsbbLvVsf2579d+8crzTf4hZkdhiZBqAfwGfyrv6Rud+CAAAAABJRU5ErkJggg=="/>
+                        </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__about">
+                <h2 class="footer__title">About</h2>
+                <ul class="footer__items">
+                    <li class="footer__item"><a class="footer__link" href="#">History</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Our Team</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Brand Guidelines</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__services">
+                <h2 class="footer__title">Services</h2>
+                <ul class="footer__items">
+                    <li class="footer__item"><a class="footer__link" href="#">How to Order</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Our Product</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Order Status</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Promo</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Payment Method</a></li>
+                </ul>
+            </div>
+            <div class="footer__other">
+                <h2 class="footer__title">Other</h2>
+                <ul class="footer__items">
+                    <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Help</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy</a></li>                    
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.pressent {
+    position: relative;
+    height: 100%;
+
+    &__title {
+        padding-top: 190px;
+        padding-left: 50%;
+        @media (max-width: 1200px) {
+            padding-top: 40px;
+        }
+        @media (max-width: 1000px) {
+            padding-top: 0;
+        }
+        @media (max-width: 680px) {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__subscription {
+        padding-left: 50%;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Montserrat";
+        margin-bottom: 32px;
+        @media (max-width: 1200px) {
+            font-size: 24px;
+        }
+        @media (max-width: 1000px) {
+            font-size: 20px;
+        }
+        @media (max-width: 680px) {
+            padding: 0 20%;
+            padding-bottom: 0px;
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        margin-left: 50%;
+        margin-bottom: 180px;
+        @media (max-width: 1000px) {
+            margin-bottom: 96px;
+        }
+        @media (max-width: 680px) {
+            margin-left: 20%;
+            margin-bottom: 30px;
+        }
+    }    
+
+}
+
+
+

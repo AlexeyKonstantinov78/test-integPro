@@ -1,0 +1,123 @@
+html {
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: montserrat, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+figure,
+fieldset,
+blockquote {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+h1 {
+    font-family: "grand-hotel", sans-serif;
+    font-weight: 400;
+    font-size: 125px;
+    color: $color;
+    @media (max-width: 1200px) {
+        font-size: 100px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 70px;
+    }
+}
+
+h2, h3 {
+    font-family: "grand-hotel", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+}
+
+h2 {
+    font-size: 75px;
+    @media (max-width: 1200px) {
+        font-size: 60px;
+    }
+}
+
+h3 {
+    font-size: 42px;
+    @media (max-width: 1200px) {
+        font-size: 30px;
+    }
+}
+
+.subscription {
+    font-size: 25px;    
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+.subscription-add {
+    font-size: 17px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    @media (max-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+    @media (max-width: 680px) {
+        padding: 0 15px;
+    }
+}
+
+section {
+    padding: 50px 0;
+}

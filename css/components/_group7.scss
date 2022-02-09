@@ -1,0 +1,58 @@
+.group7 {
+    position: relative;
+    padding: 272px 0;
+    @media (max-width: 1000px) {
+        padding: 150px 0;
+    }
+    @media (max-width: 680px) {
+        padding: 75px 0;
+    }
+    background: {
+        image: url("../img/group7-bg.png");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+    z-index: -1;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+        content: "";
+        background-color: rgba(255, 194, 0, 0.8);
+        z-index: -1;
+    }
+
+    &__blockquote-text {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 51px;
+        @media (max-width: 1000px) {
+            font-size: 30px;
+        }
+        @media (max-width: 680px) {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__city {
+        display: block;
+        margin: 0 auto;
+        font-size: 74px;
+        color: #333333;
+        font-weight: 400;
+        font-family: "Grand Hotel";
+        text-align: center;
+        @media (max-width: 1000px) {
+            font-size: 50px;
+        }
+        @media (max-width: 680px) {
+            font-size: 32px;
+        }
+    }
+}

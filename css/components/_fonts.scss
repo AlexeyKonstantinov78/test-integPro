@@ -1,0 +1,9 @@
+@font-face {
+    @include font(montserrat, 400, 400);
+}
+@font-face {
+    @include font(montserrat, 700, 700);
+}
+@font-face {
+    @include font("grand-hotel", 400, 400);
+}
